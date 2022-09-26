@@ -19,15 +19,6 @@ function Sidebar({ spotify }) {
     });
   }, [current_playlist]);
 
-  // const showCurrentPlaylist = () => {
-  //   spotify.getPlaylist().then((userPlaylist) => {
-  //     dispatch({
-  //       type: "SET_USERPLAYLIST",
-  //       userPlaylist: userPlaylist,
-  //     });
-  //   });
-  // }
-
   return (
     <div className="sidebar">
       <img

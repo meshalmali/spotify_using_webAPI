@@ -14,28 +14,6 @@ import { useDataLayerValue } from "../context/DataLayer";
 function Footer({ spotify }) {
   const [{ currentTrack, playing }, dispatch] = useDataLayerValue();
 
-  // useEffect(() => {
-  //   if (playing) {
-  //     currentTrack.external_urls.preview_url;
-  //   }
-  // }, []);
-
-  // const handlePlayPause = () => {
-  //   if (playing) {
-  //     spotify.pause();
-  //     dispatch({
-  //       type: "SET_PLAYING",
-  //       playing: false,
-  //     });
-  //   } else {
-  //     spotify.play();
-  //     dispatch({
-  //       type: "SET_PLAYING",
-  //       playing: true,
-  //     });
-  //   }
-  // };
-
   return (
     <div className="footer">
       {currentTrack ? (
@@ -56,15 +34,7 @@ function Footer({ spotify }) {
       <div className="footer_center">
         <ShuffleIcon className="footer_green" />
         <SkipPreviousIcon className="footer_icon" />
-        {/* <a href="https://p.scdn.co/mp3-preview/b8cf671d9dcff68bbe78eaaf1b4b3eba2ee4ce83?cid=620dee9198">
-          Play song
-        </a> */}
-        {/* Use an iFrame if you want to include the play preview feature */}
-        <PlayCircleOutlineIcon
-          // onClick={() => currentTrack.external_urls.preview_url}
-          className="footer_icon"
-          fontSize="large"
-        />
+        <PlayCircleOutlineIcon className="footer_icon" fontSize="large" />
 
         <SkipNextIcon className="footer_icon" />
         <RepeatIcon className="footer_green" />
