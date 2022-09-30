@@ -35,22 +35,14 @@ function Footer({ spotify }) {
         <ShuffleIcon className="footer_green" />
         <SkipPreviousIcon className="footer_icon" />
         <PlayCircleOutlineIcon className="footer_icon" fontSize="large" />
-
         <SkipNextIcon className="footer_icon" />
         <RepeatIcon className="footer_green" />
       </div>
+
       <div className="footer_right">
-        <Grid container spacing={2}>
-          <Grid item>
-            <PlaylistPlayIcon />
-          </Grid>
-          <Grid item>
-            <VolumeDownIcon />
-          </Grid>
-          <Grid item xs>
-            <Slider />
-          </Grid>
-        </Grid>
+        <PlaylistPlayIcon />
+        <VolumeDownIcon />
+        <Slider />
       </div>
     </div>
   );
